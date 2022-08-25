@@ -1,0 +1,156 @@
+body {
+    margin: 0%; 
+}
+
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar ol li {
+    display: block;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 14px 14px;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+}
+
+/* creates a banner for the video at the tp of the page */
+.container video {
+    display:flex;
+    min-width:100%;
+    max-height: 300px;
+    object-fit: cover;
+    padding-bottom: 0;
+    filter: grayscale(85%);   
+}
+
+video:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color:black;
+  }
+  
+.textbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.row {
+    display: flex;
+}
+/*distinguish between col 1 and 2 float left or right with 50% has same result*/
+.column_1 {    
+    float: right;
+    width:50%;
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color: darkgrey;
+    height: 400px;
+}
+
+.column_2 {    
+    float: right;
+    width:50%;
+    padding-top: 2px;
+    padding-left: 2px;
+    background-color:gray;
+    height: 400px;
+}
+
+.row :after {
+    content:"";
+    display: table;
+    clear: both;
+}
+/*for screens smaller than 600px*/
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+/* sets image to allow it to be black an white and then transition back */
+img {
+    
+    filter: grayscale(85%);
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img:hover {
+    filter: grayscale(5%);
+    transition: transform 1s;
+    transform: scale(-1.1);
+}
+
+p {
+    color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* form used from web3 forms */
+input, textarea {
+    width: 95%; /* input is full width */
+    padding: 12px; /* space within text box */
+    border: 1px solid #ccc; /* border setting*/
+    border-radius: 4px; /* rounded corners for the input boxes */
+    margin-top: 6px; /* gives some space between input boxes */
+    margin-bottom: 16px; /* gives space between input boxes */
+    resize: vertical; /* allows boxes to be resized for more space. doesnt work if in a fixed size container */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+  
+button {
+    background-color: black; /* button colour */
+    color: white; /* font colour in the button*/
+    font-weight: bold; /* makes font bold */
+    padding: 12px 20px; /* gives some space around the button */
+    border-radius: 4px; /* rounded corners */
+    cursor: pointer; /* Changes to pointer for submit when hovering */
+    display: block; /* Allows the submit button to be centered */
+    margin-left: auto; /* thi and right margin allows to be centered within the block */
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold; /*text family and bold. button might be too small for a 'boxy' text*/
+}
+
+
+button :hover{
+    background-color: white; 
+    color: black; 
+    transform: scale(1.5);
+    transition: transform 1.5s; 
+}
+  
+footer {
+    text-align: center;
+    font-size: xx-large;
+}
+   

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Michael Lotter</title>
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+
+    <body>
+        <!--Add a basic navbar with anchor on one page-->
+        <div class="navbar">
+           <ol>
+            <li><a class="#active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#github">GitHub</a></li>
+           <li><a href="#contact">Contact</a></li> 
+        </ol>
+        </div>
+        <!--add path to video-->
+        <div class="container" id="home">
+            <video autoplay loop muted>
+                <source src="./images/waterfow.mp4" type="video/mp4" alt="video waterfall">
+            </video>
+            <div class="textbox">
+                <h1>WEB DEVELOPMENT</h1>
+            </div>
+        </div>
+
+        <!--a section about me-->
+        
+        <div class="row" id="about">
+            <div class="column_1">
+                <img src="./images/myself.jpg" alt="actually Steve Jobs">
+            </div>
+            <div class="column_2"> <!--Spice it up a little!-->
+                <p>Hello, and thank you for visiting. I am a junior developer level candidate looking to make my mark on the web development scene.</p>
+                <p>I have a myriad of experience across many industries and have found the need to re-invent myself. Having always had an interest in computers, I believed this to be the next step.</p>
+                <p>I have a certificates from a couple of career colleges which have helped solidify my desire to work within this industry</p>
+                <p>I am a mature person with the desire to achieve results for my employer and their clients.</p>
+                <p>Results which go beyond expectations!</p>
+            </div>
+        </div>
+
+        <!--a link to my github or project websites. Create github pages for these.
+        first column will contain a picture-->
+        <div class="row" id="github">
+            <div class="column_1">
+                <p>Links to some of my work.</p><!--add more works as you move along from earlier attempts. Try and arrange in order to show progression-->
+                <ol>
+                    <li><a href="https://github.com/BXBOOT/bootstrap4_project">Bootstrap project</a></li>
+                        <p>A small project using HTML and Boostrap for a cinema styled site</p>
+                        <li><a href="https://github.com/BXBOOT/Space_Port">In Class assignments</a></li>
+                        <p>Using more than 1 css file and keeing code neat and commented</p>
+                        <li><a href="https://github.com/BXBOOT/HTML-and-CSS-Aolcc">A mixture</a></li>
+                        <p>an entire mixture f the first grouping of assignments before using Github properly</p>
+                </ol>
+            </div>
+            <div class="column_2">
+                <img src="./images/workflow.png" alt="graphic workflow">
+            </div>
+        </div>
+
+        <!--add a contact form. will use a third party to send emails
+        first column contains a picure-->
+        <div class="row" id="contact">
+            <div class="column_1">
+                
+                <div class="contact">
+                    <img src="./images/Contact.jpg" alt="the at symbol">
+                </div>
+            </div>
+            <div class="column_2">
+                <!--add a contact form-->
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <fieldset>
+                    <legend>Contact Form</legend>
+                    <input type="hidden" name="access_key" value="6fa95acb-9ad9-4427-ae67-07f5633c66c3">
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="" required>
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required />
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                    </div>
+                        <button type="submit"> Send Message </button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    <footer>&#169 All Mine I tell Ya. All Mine &#174</footer>
+    </body>
+ </html>
