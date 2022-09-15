@@ -67,7 +67,7 @@ video:hover {
 .column_1 {    
     float: right;
     width:50%;
-    padding-top: 2px;
+    padding-top: 10px;
     padding-left: 2px;
     background-color: darkgrey;
     height: 400px;
@@ -76,8 +76,8 @@ video:hover {
 .column_2 {    
     float: right;
     width:50%;
-    padding-top: 2px;
-    padding-left: 2px;
+    padding-top: 10px;
+    padding-left: 5px;
     background-color:gray;
     height: 400px;
 }
@@ -97,7 +97,7 @@ video:hover {
 /* sets image to allow it to be black an white and then transition back */
 img {
     
-    filter: grayscale(85%);
+    filter: grayscale(1%);
     border-radius: 8px;
     max-width: 100%;
     height: 340px;
@@ -106,11 +106,11 @@ img {
     margin-right: auto;
 }
 
-img:hover {
+/*img:hover {
     filter: grayscale(5%);
-    transition: transform 1s;
+    transition: transform .5s;
     transform: scale(1.1);
-}
+}*/
 
 p {
     color:black;
@@ -150,7 +150,11 @@ button :hover{
 }
   
 footer {
+    position: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(39, 43, 166);
+    color: white;
     text-align: center;
-    font-size: xx-large;
 }
-   
