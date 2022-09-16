@@ -90,6 +90,12 @@ video:hover {
     clear: both;
 }
 
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
 /* sets image to allow it to be black an white and then transition back */
 img {
     
