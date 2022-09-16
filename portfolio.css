@@ -1,5 +1,7 @@
+
 body {
-    margin: 0%; 
+    margin: 0%;
+    width: 100%;
 }
 
 .navbar {
@@ -87,12 +89,6 @@ video:hover {
     display: table;
     clear: both;
 }
-/*for screens smaller than 600px*/
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
 
 /* sets image to allow it to be black an white and then transition back */
 img {
@@ -100,7 +96,8 @@ img {
     filter: grayscale(1%);
     border-radius: 8px;
     max-width: 100%;
-    height: 340px;
+    height: 350px;
+    object-fit: cover;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -158,3 +155,4 @@ footer {
     color: white;
     text-align: center;
 }
+
